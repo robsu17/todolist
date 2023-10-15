@@ -8,7 +8,7 @@ Uma TodoList desenvolvida no curso gratuito de java da Rocketseat
 #### Cadastrar um usuário
 
 ```http
-  POST /usuarios/register
+  POST /users/register
 ```
 
 | Parâmetro   | Tipo       | Descrição                           |
@@ -20,7 +20,7 @@ Uma TodoList desenvolvida no curso gratuito de java da Rocketseat
 #### Criar uma task
 
 ```http
-  POST /task
+  POST /task/create
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
@@ -36,7 +36,7 @@ obs: Utilizar o basic auth para logar no usuario que foi cadastrado anteriorment
 ### Listar todas as task do usuario logado
 
 ```http
-  GET /task
+  GET /task/list
 ```
 
 | Atributos   | Tipo       |
@@ -52,7 +52,7 @@ obs: Utilizar o basic auth para logar no usuario que foi cadastrado anteriorment
 ### Modificar dados da task do usuário logado
 
 ```http
-  PUT /task/{id}
+  PUT /task/update/{id}
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
